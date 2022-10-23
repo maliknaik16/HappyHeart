@@ -64,7 +64,7 @@ def bad(latlng='33.777252127593584,-84.39540740633934'):
 
     gmap_resp = requests.get(gmaps_url).json()
 
-    loc = gmap_resp['results'][0]['formatted_address'] if len(gmap_resp) > 0 else '349 Ferst Dr NW, Atlanta, GA 30332, USA'
+    loc = gmap_resp['results'][0]['formatted_address'] if len(gmap_resp['results']) > 0 else '349 Ferst Dr NW, Atlanta, GA 30332, USA'
 
     l = loc.strip().split(',')
     city = l[-3].strip()
