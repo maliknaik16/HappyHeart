@@ -1,0 +1,255 @@
+<html>
+	<head>
+	<!-- Bootstrap CSS -->
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+		<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+		<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+		<title>Happy Heart</title>
+		<!-- Java Script -->
+		<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+		<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Neuton:ital,wght@0,200;0,300;0,400;0,700;0,800;1,400&display=swap" rel="stylesheet">
+
+		<style>
+
+		html {
+			scroll-behavior: smooth;
+		}
+		body {
+			font-family: 'Neuton', serif;
+		}
+
+		#button::focus {
+		}
+
+		#full-window {
+			position: absolute;
+			z-index: 999;
+			height: 0%;
+			width: 100%;
+			background-color: red;
+			transition: .5s ease-in-out;
+			overflow: hidden;
+			text-align: center;
+		}
+
+		a:hover {
+			border-bottom: 1px solid #FA6559;
+		}
+
+		#section4:hover {
+			text-decoration: none;
+		}
+
+		.results {
+			padding: .875rem 1.5rem;
+			font-size: 1.5rem;
+		}
+		</style>
+
+	</head>
+	<body>
+		<!-- Navbar-->
+        <div class = "container-fluid" style = "background-color:#F1F0F0">
+        	<div class="container" >
+        		<nav class="navbar navbar-dark">
+        		<div class = "col-sm-2 text-left">
+        		<a href="/"><img class = "img-fluid" src="images/logo.png" alt="navbarimage" style="width: 200px;" /></a>
+        		</div>
+        		<a class="navbar-brand mb-0 h1 text-black-50" href = "#section1" >
+        		<h4 style = "color: #FA6559" >Information</h4>
+        		</a>
+        		<a class="navbar-brand mb-0 h1 text-black-50" href = "#section2" >
+        		<h4 style = "color: #FA6559">Predictor</h4>
+        		</a>
+        		<a class="navbar-brand mb-0 h1 text-black-50" href = "#section3" >
+        		<h4 style = "color: #FA6559">Resources</h4>
+        		<a class="navbar-brand mb-0 h1 text-black-50" href = "#section4" >
+        		<h4 style = "color: #FA6559">About Us</h4>
+        		</a>
+        		</nav>
+        	</div>
+
+    </div>
+    <div class="pt-2 pb-2"></div>
+    <div class="section pl-5" id = "section1">
+    	<div class="container-fluid">
+    		<div class="row">
+    			<div class="col-md-2"></div>
+    			<div class="col-md-4" style="padding-top: 100px;">
+
+    				<h2>Innovative way to predict and prevent heart failure right from your devices.</h2>
+    				<p style="font-size: 1.2rem; font-weight: normal;">We use different machine learning algorithms and analysis of heart disease datasets to create a prediction tool for your heart.
+    				    Access personal health forecast, view resources on managing heart diseses, gain insights on a healthier lifestyle. </p>
+    			</div>
+    			<div class="col-md-4" style="text-align: center;">
+    				<img class = "img-fluid" src="images/logo-white.png" alt="navbarimage" style="max-width: 500px;" />
+    			</div>
+    			<div class="col-md-2"></div>
+    		</div>
+    	</div>
+        <div class="row">
+          <div class="col-sm-3">
+          </div>
+          <div class="col-sm-3 justify-content-right">
+          </div>
+        </div>
+    </div>
+
+		<div class="section" style = "padding-top: 75px; padding-bottom: 75px; background-color: #F1F0F0;" id = "section2">
+
+			<div class="pt-2 pb-2"></div>
+			<div class="container" style="text-align: center;">
+    			<h2>Answer questions about your condition and get your result.</h2><br/>
+				<a href="/analyze"><button class="btn btn-danger results">Get your results</button></a>
+			</div>
+    		<div class="pt-2 pb-2"></div>
+		</div>
+
+        <div class = "section pb-2 pt-2" id = "section3">
+    		<div class="pt-2 pb-2"></div>
+    		<div class="pt-2 pb-2"></div>
+    		<div class="pt-2 pb-2"></div>
+            <h2 class = "text-center">Read More about the Heart</h2>
+    		<div class="pt-2 pb-2"></div>
+    		<div class="pt-2 pb-2"></div>
+
+            <div class="container">
+            	<div class="card" style="display:  inline-block; width: 18rem; margin-left: 30px;">
+            	  <img class="card-img-top" src="images/resource3.jpg" alt="Card image cap" style="max-height: 240px;">
+            	  <div class="card-body">
+            	    <h5 class="card-title">Keep Your Heart Healthy</h5>
+            	    <p class="card-text">Find out how you can keep your heart and life healthy.</p>
+            	    <a href="https://health.gov/myhealthfinder/health-conditions/heart-health/keep-your-heart-healthy" class="btn btn-primary">Read More</a>
+            	  </div>
+            	</div>
+
+            	<div class="card" style="display:  inline-block; width: 18rem; margin-left: 30px;">
+            	  <img class="card-img-top" src="images/resource1.jpg" alt="Card image cap" style="max-height: 215px;">
+            	  <div class="card-body">
+            	    <h5 class="card-title">15 Incredibly Heart-Healthy Foods</h5>
+            	    <p class="card-text">Looking for food that are good for your heart?</p>
+            	    <a href="https://www.healthline.com/nutrition/heart-healthy-foods#TOC_TITLE_HDR_2" class="btn btn-primary">Read More</a>
+            	  </div>
+            	</div>
+
+
+            	<div class="card" style="display:  inline-block; width: 18rem; margin-left: 30px;">
+            	  <img class="card-img-top" src="images/resource2.jpg" alt="Card image cap" style="max-height: 215px;">
+            	  <div class="card-body">
+            	    <h5 class="card-title">5 Heart Healthy Habits</h5>
+            	    <p class="card-text">Prevention is the key to keeping your heart in top shape and pumping the way that it should</p>
+            	    <a href="https://www.scripps.org/news_items/5146-5-heart-healthy-habits" class="btn btn-primary">Read More</a>
+            	  </div>
+            	</div>
+
+
+            </div>
+
+            <div class="pt-2 pb-2"></div>
+            <div class="pt-2 pb-2"></div>
+            <div class="pt-2 pb-2"></div>
+        </div>
+
+		<div class = "section pt-2 pb-6" style="background-color: #F1F0F0;">
+
+			<div class="pt-2 pb-2"></div>
+			<div class="pt-2 pb-2"></div>
+			<div class="pt-2 pb-2"></div>
+	        <h2 class = "text-center">Our dataset evaluation results</h2>
+			<div class="pt-2 pb-2"></div>
+
+            <div class = "row justify-content-center">
+                <div class = "col-sm-2 pt-5">
+                     <img class = "img-fluid" src = "images/data1.png" width="900" height="900"/>
+                </div>
+                <div class = "col-sm-2 justify-content-lg-end pt-5 pl-lg-5 pb-5">
+                     <img class = "img-fluid" src = "images/data2.png" width="900" height="900" />
+                </div>
+				<div class = "col-sm-2 justify-content-lg-end pt-5 pl-lg-5 pb-5">
+                     <img class = "img-fluid" src = "images/data3.png" width="900" height="900" />
+                </div>
+				<div class = "col-sm-2 justify-content-lg-end pt-5 pl-lg-5 pb-5">
+                     <img class = "img-fluid" src = "images/data4.png" width="900" height="900" />
+                </div>
+                </div>
+
+
+                <div class="pt-2 pb-2"></div>
+                <div class="pt-2 pb-2"></div>
+                <div class="pt-2 pb-2"></div>
+           </div>
+
+
+
+
+        <div class = "section pl-5" style = "background-color: #FCF4EA;" id = "section4">
+
+        	<div class="pt-2 pb-2"></div>
+        	<div class="pt-2 pb-2"></div>
+        	<div class="pt-2 pb-2"></div>
+	        <h2 class = "text-center" style="color: #FA6559;">Meet the Devious Designers</h2>
+			<div class="pt-2 pb-2"></div>
+			<div class="pt-2 pb-2"></div>
+
+            <div class = "row justify-content-center">
+            <div class = "col-sm-2">
+                <a class="members" href = "https://www.maliknaik.me/">
+                <div>
+					<h4 class = "text-center" style = "color: #FA6559;">Malik Naik</h4>
+				</div>
+            </a>
+                <p class = "text-md-center text-black font-weight-bold">Full Stack Developer</p>
+            </div>
+            <div class = "col-sm-2">
+                <a class="members" href = "https://github.com/minhvo2601">
+					<div>
+						<h4 class = "text-center" style = "color: #FA6559;">Megan Vo</h4>
+					</div>
+            </a>
+                <p class = "text-md-center text-black font-weight-bold">Data Analyst</p>
+            </div>
+            <div class = "col-sm-2">
+                <a class="members" href = "https://github.com/zainabm9786">
+					<div>
+						<h4 class = "text-center" style = "color: #FA6559;">Zainab Mohammed</h4>
+					</div>
+            </a>
+                <p class = "text-md-center text-black font-weight-bold">UI/UX Designer </p>
+            </div>
+			<div class = "col-sm-2">
+                <a class="members" href = "https://github.com/SanaR511">
+					<div>
+						<h4 class = "text-center" style = "color: #FA6559;">Sana Rashid </h4>
+					</div>
+            </a>
+                <p class = "text-md-center text-black font-weight-bold">Frontend Developer</p>
+            </div>
+        </div>
+
+
+        <div class="pt-2 pb-2"></div>
+        <div class="pt-2 pb-2"></div>
+        <div class="pt-2 pb-2"></div>
+        </div>
+
+        <div class="container pt-2 pb-2">
+            <div class="container-fluid footer-bottom text-center">
+                <p>Copyright © 2022 Devious Designers</p>
+            </div>
+        </div>
+
+        <script>
+        	function test() {
+        		document.querySelector("#full-window").style.height = '100%';
+        	}
+        	</script>
+	</body>
+</html>
+
+

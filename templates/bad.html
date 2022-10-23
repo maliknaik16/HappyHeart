@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title></title>
+
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
+
+    <!-- jQuery library -->
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.slim.min.js"></script>
+
+    <!-- Popper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Neuton:ital,wght@0,200;0,300;0,400;0,700;0,800;1,400&display=swap" rel="stylesheet">
+
+    <style type="text/css">
+
+        html {
+            scroll-behavior: smooth;
+        }
+        body {
+            font-family: 'Neuton', serif;
+        }
+
+        h1 {
+            font-weight: bold;
+        }
+        .doctors span {
+            font-size: 1rem;
+            color: rgba(0, 0, 0, 0.75);
+        }
+
+        .doctors p {
+            margin-top: 15px;
+            font-size: 1.1rem;
+        }
+
+        .btn {
+            font-size: 1.15rem;
+            padding: 0.475rem 1rem;
+            font-family: serif;
+        }
+
+    </style>
+
+</head>
+<body>
+
+    <div class="container-fluid">
+        <div class="pt-2 pb-2"></div>
+        <div class="container pt-2" style="margin-top: 100px;">
+            <div class="container" style="text-align: center;">
+                <img src="images/heart.jpg" class="img-fluid" style="width: 300px;" />
+                <h1 style="color: #dc183e; font-family: 'Alfa Slab One', serif; font-weight: 400;">Uh oh, You likely have an heart disease</h1>
+
+                <div class="pt-2 pb-2"></div>
+            </div>
+        </div>
+
+        <div class="container">
+
+            <div class="pt-2 pb-2"></div>
+            <div class="pt-2 pb-2"></div>
+            <h2 class = "text-center">We've found some nearby doctors around you</h2>
+            <p class="text-center" style="font-size: 1rem;">Please schedule an appointment with a doctor and stay healthy!</p>
+            <div class="pt-2 pb-2"></div>
+            <div class="pt-2 pb-2"></div>
+
+            <div class="container doctors">
+
+                {% for doctor in doctors %}
+
+                    <div class="row" style="border-bottom: 1px solid rgba(0, 0, 0, 0.1); padding-bottom: 20px; padding-top: 20px;">
+                        <div class="col-md-2"></div>
+                        <div class="col-md-2 clearfix">
+                            {% if doctor['img_url']|length > 0 %}
+                                <img src="{{ doctor['img_url'] }}" class=" img-fluid" />
+                            {% else %}
+                                <img src="images/profile.png" class=" img-fluid" />
+                            {% endif %}
+                        </div>
+                        <div class="col-md-6">
+                            <h3 class="h3 font-weight-bold">{{ doctor['name'] }}</h3>
+                            {% if doctor['phone']|length > 0 %}
+                                <span><b>Phone</b>: {{ doctor['phone'] }}</span><br/>
+                            {% endif %}
+
+                            {% if doctor['address']|length > 0 %}
+                                <span><b>Address</b>: {{ doctor['address'] }}</span><br/>
+                            {% endif %}
+
+                            <p>{{ doctor['description'] }}</p>
+
+                            <a target="_blank" href="{{ doctor['url'] }}" class="btn btn-danger">Book an appointment</a>
+                        </div>
+                        <div class="col-md-2"></div>
+                    </div>
+                {% endfor %}
+            </div>
+
+        </div>
+        <div class="container">
+
+            <div class="pt-2 pb-2"></div>
+            <div class="pt-2 pb-2"></div>
+            <h2 class = "text-center">Nearby Hospitals</h2>
+            <div class="pt-2 pb-2"></div>
+            <div class="pt-2 pb-2"></div>
+
+            <iframe src="https://www.google.com/maps/d/embed?mid=14vIB3LlYImYaN1X1PoJLgPxg6PHNHwc&ehbc=2E312F" width="100%" height="480" style="border: none;"></iframe>
+        </div>
+    </div>
+
+
+    <div class="container pt-2 pb-2">
+        <div class="container-fluid footer-bottom text-center">
+            <p>Copyright © 2022 Devious Designers</p>
+        </div>
+    </div>
+
+</body>
+</html>
+
+<!--
+
+
+<div class="row" style="border-bottom: 1px solid rgba(0, 0, 0, 0.1); padding-bottom: 25px;">
+    <div class="col-md-2"></div>
+    <div class="col-md-2 clearfix">
+        <img src="https://www.mdvip.com/sites/default/files/doctor-images/CYoung-WilsonDO_6271_162.png" class=" img-fluid" />
+    </div>
+    <div class="col-md-6">
+        <h3 class="h3 font-weight-bold">Dr. Michelle Yvette Evans, MD</h3>
+        <span><b>Phone</b>: (404) 596-1218</span><br/>
+        <span><b>Address</b>: 1800 Howell Mill Road NW Suite 650, Atlanta, GA 30318</span><br/>
+
+        <p>Dr. Michelle Evans has been a member of the Piedmont community since 2005 as a solo practitioner.  She received her Bachelors of Arts from Howard University in Washington, DC, a Doctor ... Read More</p>
+
+        <a target="_blank" href="https://doctor.webmd.com/doctor/michelle-evans-08482afb-825c-4ec7-a846-28293509104b-overview" class="btn btn-danger">Book an appointment</a>
+    </div>
+    <div class="col-md-2"></div>
+</div>
+
+-->

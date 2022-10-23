@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Get your results</title>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
+
+    <!-- jQuery library -->
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.slim.min.js"></script>
+
+    <!-- Popper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Neuton:ital,wght@0,200;0,300;0,400;0,700;0,800;1,400&display=swap" rel="stylesheet">
+
+    <style type="text/css">
+
+        body {
+            font-family: 'Neuton', serif;
+        }
+
+        input[type="text"], input[type="number"], select {
+            display: block;
+            width: 100%;
+            font-family: inherit;
+            color: rgb(4, 69, 175);
+            padding: 0px 0px 8px;
+            border: none;
+            outline: none;
+            border-radius: 0px;
+            appearance: none;
+            background-image: none;
+            background-position: initial;
+            background-size: initial;
+            background-repeat: initial;
+            background-attachment: initial;
+            background-origin: initial;
+            background-clip: initial;
+            transform: translateZ(0px);
+            font-size: 30px;
+            -webkit-font-smoothing: antialiased;
+            line-height: unset;
+            -webkit-text-fill-color: rgba(4, 69, 175, 0.5);
+            animation: 1ms ease 0s 1 normal none running native-autofill-in;
+            transition: background-color 1e+08s ease 0s, box-shadow 0.1s ease-out 0s;
+            box-shadow: rgba(4, 69, 175, 0.3) 0px 1px;
+            background-color: transparent !important;
+            margin-top: 20px;
+        }
+
+        select {
+            color: rgb(4, 69, 175, 0.5);
+            font-size: 25px;
+            margin: 30px 0px 10px 0px;
+            outline: none;
+            box-shadow: none;
+            -webkit-text-fill-color: rgba(4, 69, 175, 0.9);
+        }
+        input[type="text"]:focus, select:focus {
+            box-shadow: rgb(4 69 175) 0px 2px;
+        }
+
+        select option {
+            font-size: 30px;
+        }
+        label {
+            margin: 0px;
+            max-width: 100%;
+            width: inherit;
+            font-weight: unset;
+            font-size: 35px;
+            line-height: 32px;
+        }
+
+        .custom-button {
+            position: relative;
+            font-family: inherit;
+            line-height: inherit;
+            font-weight: 700;
+            cursor: pointer;
+            transition-duration: 0.1s;
+            transition-property: background-color, color, border-color, opacity, box-shadow;
+            transition-timing-function: ease-out;
+            outline: none;
+            border: 1px solid transparent;
+            margin: 0px;
+            box-shadow: rgba(0, 0, 0, 0.1) 0px 3px 12px 0px;
+            padding: 6px 14px;
+            min-height: 40px;
+            background-color: rgb(4, 69, 175);
+            color: rgb(255, 255, 255);
+            border-radius: 4px;
+        }
+/*        .vcenter {
+            margin-top: 30%;
+            width: 100%;
+        }*/
+
+        #field-1, #field-2, #field-3, #field-4, #field-5, #field-6, #field-7, #field-8, #field-9, #field-10, #field-11, #field-12 {
+            transition: 0.2s ease-in-out;
+            overflow: hidden;
+            height: 200px;
+        }
+/*
+        #field-2, #field-3, #field-4, #field-5, #field-6, #field-7, #field-8, #field-9, #field-10, #field-11, #field-12 {
+            height: 0px;
+        }*/
+    </style>
+
+    <script type="text/javascript">
+
+        var field = 1;
+
+        function next(e) {
+            e = e || window.event;
+            e.preventDefault();
+            var id = 'field-' + field;
+            var elm = document.querySelector("#" + id);
+
+            elm.style.height = '0px';
+
+            field++;
+
+            var id = 'field-' + field;
+            var elm = document.querySelector("#" + id);
+            elm.style.height = '200px';
+        }
+
+        var x = document.getElementById("demo");
+
+        function updatePosition(position) {
+            var latlng = document.querySelector('#latlng');
+            latlng.value = position.coords.latitude + ',' + position.coords.longitude;
+        }
+
+        function updateDefaultLocation(error) {
+            var latlng = document.querySelector('#latlng');
+            latlng.value = "33.777252127593584,-84.39540740633934";
+        }
+
+        function setLocation() {
+          if (navigator.geolocation) {
+            navigator.geolocation.getCurrentPosition(updatePosition, updateDefaultLocation);
+          } else {
+            updateDefaultLocation('');
+          }
+        }
+
+        window.onload = function() {
+            setLocation();
+        }
+
+    </script>
+</head>
+<body>
+
+<!-- Navbar-->
+<div class = "container-fluid" style = "background-color:#F1F0F0">
+    <div class="container" >
+        <nav class="navbar navbar-dark">
+        <div class = "col-sm-2 text-left">
+            <a href="/"><img class = "img-fluid" src="images/logo.png" alt="navbarimage" style="width: 200px;" /></a>
+        </div>
+        <div>
+            <h2>HackGT 9 Project</h2>
+        </div>
+        </nav>
+    </div>
+
+</div>
+<div class="container">
+    <form action="/predict" method="POST">
+
+        <div class="pt-2 pb-2"></div>
+        <div class="pt-2 pb-2"></div>
+        <h1 class="text-center">Please answer the following question to get your heart results.</h1>
+        <div class="pt-2 pb-2"></div>
+        <div class="pt-2 pb-2"></div>
+
+        <div class="container vcenter">
+            <!-- Age -->
+            <div class="form-group" id="field-1">
+              <label for="age">What's your age?</label>
+              <input type="text" class="form-control" placeholder="Age" id="age" name="age" required><br/>
+            </div>
+
+            <!-- Gender -->
+            <div class="form-group" id="field-2">
+              <label for="sex">What's your gender?</label>
+              <select class="form-control" id="sex" name="gender" required>
+                <option disabled="" selected="" value=""> Choose an option </option>
+                <option value="0">Male</option>
+                <option value="1">Female</option>
+              </select>
+            </div>
+
+            <!-- Chest Pain Type -->
+            <div class="form-group" id="field-3">
+              <label for="cp">Do you have any one type of Chest Pain?</label>
+              <select class="form-control" id="cp" name="cp" required>
+                  <option disabled="" selected="" value=""> Choose an option </option>
+                  <option value="0">Pain by physical exertion or emotional stress (Typical Angina)</option>
+                  <option value="1">Pain with squeezing, pressure, heaviness, or tightness(Atypical Angina)</option>
+                  <option value="2">Pain increases with inspiration (Non-anginal Pain)</option>
+                  <option value="3">Asymptomatic</option>
+              </select>
+            </div>
+
+            <!-- Resting Blood Pressure -->
+            <div class="form-group" id="field-4">
+              <label for="trestbps">What's your resting Blood Pressure (in mmHg)?</label>
+              <input type="text" class="form-control" placeholder="Resting Blood Pressure" id="trestbps" name="trestbps" required><br/>
+            </div>
+
+            <!-- Serum Cholestoral -->
+            <div class="form-group" id="field-5">
+              <label for="chol">What's your Serum Cholestoral (in mg/dl)?</label>
+              <input type="text" class="form-control" placeholder="Serum Cholestoral" id="chol" name="chol" required><br/>
+            </div>
+
+
+            <!-- Fasting Blood Sugar > 120 mg/dl -->
+            <div class="form-group" id="field-6">
+              <label for="fbs">What's your Fasting Blood Sugar (> 120 mg/dl)?</label>
+                <select class="form-control" id="fbs" name="fbs" required="">
+                    <option disabled="" selected="" value=""> Choose an option </option>
+                    <option value="0">False</option>
+                    <option value="1">True</option>
+                </select>
+            </div>
+
+            <!-- Resting ECG Results -->
+            <div class="form-group" id="field-7">
+              <label for="restecg">What are your ECG Results?</label>
+                <select class="form-control" id="restecg" name="restecg" required="">
+                    <option disabled="" selected="" value=""> Choose an option </option>
+                    <option value="0">Normal</option>
+                    <option value="1">Having ST-T wave abnormality  </option>
+                    <option value="2"> Probable or definite left ventricular hypertrophy  </option>
+                </select>
+            </div>
+
+
+            <!-- Maximum Heart Rate -->
+            <div class="form-group" id="field-8">
+              <label for="thalach">What's your maximum heart rate?</label>
+              <input type="text" class="form-control" placeholder="Maximum heart rate" id="thalach" name="thalach" required><br/>
+            </div>
+
+
+            <!-- Exercise Induced Angina -->
+            <div class="form-group" id="field-9">
+              <label for="oldpeak">Do you have Exercise Induced Angina?</label>
+                <select class="form-control" id="oldpeak" name="oldpeak" required="">
+                    <option disabled="" selected="" value=""> Choose an option </option>
+                    <option value="0">No</option>
+                    <option value="1">Yes</option>
+                </select>
+            </div>
+
+            <!-- Old Peak -->
+            <div class="form-group" id="field-10">
+              <label for="peak">What's the Old peak value?</label>
+              <input type="text" class="form-control" placeholder="Old Peak Value" id="peak" name="peak" required><br/>
+            </div>
+
+            <!-- Slope of the Peak Exercise ST Segment -->
+            <div class="form-group" id="field-11">
+              <label for="slope">What's your slope of the peak exercise ST segment?</label>
+              <select class="form-control" id="slope" name="slope" required="">
+                <option disabled="" selected="" value=""> Choose an option </option>
+                <option value="0">Upsloping</option>
+                <option value="1">Flat</option>
+                <option value="2">Downsloping</option>
+              </select>
+              <button class="custom-button" type="submit">Get Results</button>
+            </div>
+
+        </div>
+
+        <input type="hidden" value="" id="latlng" name="latlng" required><br/>
+
+    </form>
+</div>
+</body>
+</html>
