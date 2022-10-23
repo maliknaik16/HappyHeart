@@ -1,0 +1,243 @@
+
+{
+  "doctors": [
+    {
+      "address": "Atlanta, GA 30309",
+      "description": "Dr. Michelle Evans has been a member of the Piedmont community since 2005 as a solo practitioner.  She received her Bachelors of Arts from Howard University in Washington, DC, a Doctor ...\u00a0Read More",
+      "img_url": "https://img.webmd.com/lhd/provider_prod/333544_ProviderProfileImage_6437c662-db27-479e-826e-04267feea0de.png?resize=150px:*",
+      "name": "Dr. Michelle Yvette Evans, MD",
+      "phone": "(404) 596-1218",
+      "ratings": "23",
+      "speciality": [
+        "Family Medicine",
+        "Concierge Medicine"
+      ],
+      "url": "https://doctor.webmd.com/doctor/michelle-evans-08482afb-825c-4ec7-a846-28293509104b-overview"
+    },
+    {
+      "address": "1800 Howell Mill Road NW Suite 650, Atlanta, GA 30318",
+      "description": "Dr. Young-Wilson, Board Certified Family Medicine physician, offers a different approach to primary care. She sees fewer patients, which means more time for each one. Patients appreciate ...\u00a0Read More",
+      "img_url": "https://www.mdvip.com/sites/default/files/doctor-images/CYoung-WilsonDO_6271_162.png",
+      "name": "Dr. Crystal Anne Young-Wilson",
+      "phone": "(404) 721-0153",
+      "ratings": "28",
+      "speciality": [
+        "Family Medicine"
+      ],
+      "url": "https://doctor.webmd.com/doctor/crystal-young-wilson-7290552b-b47e-49cc-bd48-f5cc0a4be79f-overview"
+    },
+    {
+      "address": "2365 Powder Springs SW Suite 1103, Marietta, GA 30064",
+      "description": "Dr. Jok\u00e9 Solanke is a board-certified family nurse practitioner with approximately two decades of patient care experience in acute, sub-acute, chronic, and long-term care.\u00a0Dr. ...\u00a0Read More",
+      "img_url": "https://img.webmd.com/lhd/provider_prod/3923183_ProviderProfileImage_bfabfbf8-73a0-494f-b033-1e050d5cca9f.png?resize=150px:*",
+      "name": "Dr. Jok\u00e9 Solanke, DNP",
+      "phone": "(470) 604-9800",
+      "ratings": "0",
+      "speciality": [
+        "Family Medicine",
+        "Primary Care"
+      ],
+      "url": "https://doctor.webmd.com/doctor/ibijoke-solanke-752becf2-1b1b-4cb7-bf26-193fde7c7256-overview"
+    },
+    {
+      "address": "2732 Candler Rd, Decatur, GA 30034",
+      "description": "\"Excellent primary care doctor.\"",
+      "img_url": "",
+      "name": "Dr. Khaja J. Ahmed, MD",
+      "phone": "(888) 485-4430",
+      "ratings": "2",
+      "speciality": [
+        "Internal Medicine",
+        "Geriatric Medicine",
+        "Family Medicine",
+        "Annual Physicals",
+        "Preventive Care"
+      ],
+      "url": "https://doctor.webmd.com/doctor/khaja-ahmed-a46b05af-09a7-44ec-a346-a301ce5b4891-overview"
+    },
+    {
+      "address": "Atlanta, GA 30361",
+      "description": "\"My experience with One Step was amazing! It was easy to navigate and extremely helpful and convenient. Definitely recommend!!\"",
+      "img_url": "https://img.webmd.com/lhd/provider_prod/3922516_CampaignProfiderProfileImage_810d6dfb-b195-48f9-900d-762bf1b5ce99.png?resize=150px:*",
+      "name": "OneStep Physical Therapy",
+      "phone": "(815) 580-4232",
+      "ratings": "7",
+      "speciality": [
+        "Physical Medicine & Rehabilitation"
+      ],
+      "url": "https://doctor.webmd.com/doctor/onestep-physical-therapy-3c449d52-ddc3-4b28-b427-67121c5a782a-overview?lid=A9173941"
+    },
+    {
+      "address": "3088 Washington Rd, East Point, GA 30344",
+      "description": "\"Excellent bedside manner!  Thorough and listens well.\"",
+      "img_url": "https://cdn2.assets-servd.host/nappy-waxbill/production/portraits/Anita-Varkey-MD-primary-care-physician-at-oak-street-health-East-Point.jpg",
+      "name": "Dr. Anita Varkey, MD",
+      "phone": "(888) 485-4430",
+      "ratings": "4",
+      "speciality": [
+        "Internal Medicine",
+        "Geriatric Medicine",
+        "Family Medicine",
+        "Annual Physicals",
+        "Preventive Care"
+      ],
+      "url": "https://doctor.webmd.com/doctor/anita-varkey-6c7b98a6-4289-452f-a749-d60b095e2ebf-overview"
+    },
+    {
+      "address": "870 CRESTMARK DR STE 200, LITHIA SPRINGS, GA 30122",
+      "description": "Dr. Sheila Littles has over 20 years of working as a Registered Nurse before obtaining a bachelor's Science in Nursing and then a master's Science in Nursing; Sheila then obtained ...\u00a0Read More",
+      "img_url": "https://img.webmd.com/lhd/provider_prod/2784510_ProviderProfileImage_c8256d1b-fe61-48f3-b4a7-5de408deccad.png?resize=150px:*",
+      "name": "Dr. Sheila Littles",
+      "phone": "(770) 872-4721",
+      "ratings": "0",
+      "speciality": [
+        "Internal Medicine",
+        "Nurse Practitioner",
+        "Primary Care",
+        "Public Health & General Preventative Medicine"
+      ],
+      "url": "https://doctor.webmd.com/doctor/sheila-littles-a2ad371a-d0fa-41bb-a0fc-3fce2d3d4eef-overview"
+    },
+    {
+      "address": "2215 Exchange Place Southeast Suite B, Conyers, GA 30013",
+      "description": "Dr. Manning, Board Certified Family Medicine physician, offers a different approach to primary care. He sees fewer patients, which means more time for each one. Patients appreciate ...\u00a0Read More",
+      "img_url": "https://www.mdvip.com/sites/default/files/doctor-images/DrMichaelJManningMD_1984_162.png",
+      "name": "Dr. Michael J. Manning",
+      "phone": "(770) 648-0849",
+      "ratings": "10",
+      "speciality": [
+        "Family Medicine"
+      ],
+      "url": "https://doctor.webmd.com/doctor/michael-manning-c9f4e451-c691-485f-9814-8ef737e33922-overview"
+    },
+    {
+      "address": "2566 Shallowford Rd NE Ste 104, Atlanta, GA 30345",
+      "description": "\"Dr Winiarski, was thoughtful, knowledgeable and  deliberate in his delivery of information.\nI came to him after a cardiologist told me that based on my calcium Score number of 220, ...\u00a0Read More\"",
+      "img_url": "https://img.webmd.com/lhd/provider_prod/1612101_ProviderProfileImage_244fcf53-c079-46c8-abb0-22240ef153ca.jpg?resize=150px:*",
+      "name": "Dr. Steven Winiarski, DO",
+      "phone": "",
+      "ratings": "4",
+      "speciality": [
+        "Clinical Lipidology"
+      ],
+      "url": "https://doctor.webmd.com/doctor/steven-winiarski-f9be93b3-7e68-4451-a820-0f1b558b59fe-overview"
+    },
+    {
+      "address": "550 Peachtree St NE Fl 6, Atlanta, GA 30308",
+      "description": "Dr. Chang was born outside of Houston, Texas. He graduated with honors from Baylor University and the University of Texas, School of Medicine. His internship and residency were done ...\u00a0Read More",
+      "img_url": "https://mdxvitals-res.cloudinary.com/private_images/h_150,w_150,c_fill,g_face,f_auto,dpr_auto/professionals/1572644/photo.jpg",
+      "name": "Dr. George L. Chang, MD",
+      "phone": "",
+      "ratings": "33",
+      "speciality": [
+        "Cardiovascular Disease"
+      ],
+      "url": "https://doctor.webmd.com/doctor/george-chang-5cc421ca-10a8-4f7e-b7be-489c15768bd5-overview?lid=5000997"
+    },
+    {
+      "address": "550 Peachtree St NE, Atlanta, GA 30308",
+      "description": "\"I am a new patient and I could not ask for a more caring doctor.\"",
+      "img_url": "https://mdxvitals-res.cloudinary.com/private_images/h_150,w_150,c_fill,g_face,f_auto,dpr_auto/professionals/1827963/photo.jpg",
+      "name": "Dr. Dan M. Sorescu, MD",
+      "phone": "",
+      "ratings": "14",
+      "speciality": [
+        "Cardiovascular Disease"
+      ],
+      "url": "https://doctor.webmd.com/doctor/dan-sorescu-4d6fb3d1-86e4-497f-9812-4afff9a6293e-overview?lid=V77903"
+    },
+    {
+      "address": "315 Boulevard NE Ste 310, Atlanta, GA 30312",
+      "description": "Dr. Shelton graduated from the Michigan State University College of Human Medicine in 1997. He works in Atlanta, GA and 1 other location and specializes in Emergency Medicine, Family ...\u00a0Read More",
+      "img_url": "",
+      "name": "Dr. Courtney Delige Shelton, MD",
+      "phone": "",
+      "ratings": "31",
+      "speciality": [
+        "Emergency Medicine",
+        "Family Medicine",
+        "Internal Medicine/Pediatrics",
+        "Internal Medicine"
+      ],
+      "url": "https://doctor.webmd.com/doctor/courtney-shelton-02570097-b940-40e8-94f0-795f2c845c28-overview?lid=5611871"
+    },
+    {
+      "address": "315 BOULEVARD NE STE 444, ATLANTA, GA 30312",
+      "description": "Dr. Mack graduated from the Boston University School of Medicine in 1977. He works in Decatur, GA and 1 other location and specializes in Cardiovascular Disease and Internal Medicine. ...\u00a0Read More",
+      "img_url": "",
+      "name": "Dr. Edward Charles Mack, MD",
+      "phone": "",
+      "ratings": "24",
+      "speciality": [
+        "Cardiovascular Disease",
+        "Internal Medicine"
+      ],
+      "url": "https://doctor.webmd.com/doctor/edward-mack-jr-2983c18b-00ad-40b4-8c27-71b1e15ac86a-overview?lid=GAI1050659"
+    },
+    {
+      "address": "550 Peachtree St NE, Atlanta, GA 30308",
+      "description": "Dr. Elchami graduated from the American University of Beirut Faculty of Medicine in 2000. He works in Johns Creek, GA and 3 other locations and specializes in Cardiovascular Disease ...\u00a0Read More",
+      "img_url": "https://mdxvitals-res.cloudinary.com/private_images/h_150,w_150,c_fill,g_face,f_auto,dpr_auto/professionals/1806232/photo.jpg",
+      "name": "Dr. Mikhael Fariz Elchami, MD",
+      "phone": "",
+      "ratings": "11",
+      "speciality": [
+        "Cardiovascular Disease",
+        "Internal Medicine"
+      ],
+      "url": "https://doctor.webmd.com/doctor/mikhael-el-chami-11dde9f5-f35b-41a2-880d-eefc3c69454a-overview?lid=V10081451"
+    },
+    {
+      "address": "275 Collier Rd NW Ste 500, Atlanta, GA 30309",
+      "description": "Dr. Goswami graduated from the Duke University School of Medicine in 2006. He works in Duluth, GA and 2 other locations and specializes in Cardiovascular Disease and Internal Medicine. ...\u00a0Read More",
+      "img_url": "https://mdxvitals-res.cloudinary.com/private_images/h_150,w_150,c_fill,g_face,f_auto,dpr_auto/professionals/1832868/photo.jpg",
+      "name": "Dr. Robi Goswami, MD",
+      "phone": "",
+      "ratings": "12",
+      "speciality": [
+        "Cardiovascular Disease",
+        "Internal Medicine"
+      ],
+      "url": "https://doctor.webmd.com/doctor/robi-goswami-59bf6f02-8448-4908-95c0-0ed8b901076a-overview?lid=5006247"
+    },
+    {
+      "address": "550 Peachtree St NE Ste 1035, Atlanta, GA 30308",
+      "description": "Dr. Enrique Flores received his Doctor of Medicine degree at the University of Chile and completed his Graduate Medical Education at Deaconess Hospital , Harvard University in Boston ...\u00a0Read More",
+      "img_url": "https://mdxvitals-res.cloudinary.com/private_images/h_150,w_150,c_fill,g_face,f_auto,dpr_auto/professionals/1887476/photo.jpg",
+      "name": "Dr. Enrique Andre Flores, MD",
+      "phone": "",
+      "ratings": "16",
+      "speciality": [
+        "Cardiovascular Disease",
+        "Internal Medicine",
+        "Interventional Cardiology"
+      ],
+      "url": "https://doctor.webmd.com/doctor/enrique-flores-13a5ca42-6e13-410d-9179-95421d9de31e-overview?lid=V10351761"
+    },
+    {
+      "address": "1800 Howell Mill Road NW Suite 650, Atlanta, GA 30318",
+      "description": "Dr. Young-Wilson, Board Certified Family Medicine physician, offers a different approach to primary care. She sees fewer patients, which means more time for each one. Patients appreciate ...\u00a0Read More",
+      "img_url": "https://www.mdvip.com/sites/default/files/doctor-images/CYoung-WilsonDO_6271_162.png",
+      "name": "Dr. Crystal Anne Young-Wilson",
+      "phone": "",
+      "ratings": "28",
+      "speciality": [
+        "Family Medicine"
+      ],
+      "url": "https://doctor.webmd.com/doctor/crystal-young-wilson-7290552b-b47e-49cc-bd48-f5cc0a4be79f-overview"
+    },
+    {
+      "address": "75 Piedmont Ave NE Ste 600, Atlanta, GA 30303",
+      "description": "Dr. Blake graduated from the Icahn School of Medicine At Mount Sinai in 1984. He works in Atlanta, GA and 2 other locations and specializes in Cardiovascular Disease and Internal Medicine. ...\u00a0Read More",
+      "img_url": "https://mdxvitals-res.cloudinary.com/private_images/h_150,w_150,c_fill,g_face,f_auto,dpr_auto/professionals/1942289/photo.jpg",
+      "name": "Dr. Victor Jerome Blake, MD",
+      "phone": "",
+      "ratings": "15",
+      "speciality": [
+        "Cardiovascular Disease",
+        "Internal Medicine"
+      ],
+      "url": "https://doctor.webmd.com/doctor/victor-blake-1b93dd02-0b28-4a1c-9514-fed9294b5100-overview?lid=V58036"
+    }
+  ]
+}
